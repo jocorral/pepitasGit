@@ -1,15 +1,19 @@
 <!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <html lang="en">
 <style>
    li{
      text-align: left;
-     margin-left: -230px;
-   }
+     margin-left: -340px;
+     margin-right: 200px;
+     border: 2px solid;
+     border-radius: 0px 36.5px;
+  }
 
 </style>
 
-
 <head>
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -25,6 +29,10 @@
 
     <!-- Custom styles for this template -->
     <link href="../static/css/cover.css" rel="stylesheet">
+
+    <!-- Extra Styles -->
+    <link href="../static/css/styles.css" rel="stylesheet">
+
   </head>
 
   <body>
@@ -46,45 +54,60 @@
             </div>
           </div>
 
-          <div class="inner cover">
+          <div id = "" class="inner cover">
             <!-- body en si, tablas y demas -->
-            </div>
+
+            <section class="hidden" id = "AAP">
+              <h1>Accidentes Anuales por Provincia</h1>
+            </section>
+            <section class="hidden" id = "GAE">
+            <h1>Gravedad de Accidentes por Edades</h1>
+            </section>
+            <section class="hidden" id = "C+A">
+            <h1>Carreteras con más Accidentes</h1>
+            </section>
+            <section class="hidden" id = "GdA">
+            <h1>Gravedad dependiendo de la Antigüedad</h1>
+            </section>
+            <section class="hidden" id = "AdA">
+            <h1>Accidentes dependiendo del Asfalto</h1>
+            </section>
+          </div>
 
           <div id="sidebar" class="col-md-6">
             <div class="module">
               <a id="indice"></a>
 
-                <h3>Graficos</h3>
+                <h3 style="text-align: right; margin-right: 300px">Graficos</h3>
 
                   <ul class="list-group">
-                    <li class="list-group-item">
-                      <span class="tag tag-default tag-pill float-xs-right">14</span>
-                      <a href="#" style="color: black;"><strong>AAP</strong>(Accidentes Anuales por Provincia)    </a>
+                    <li class="list-group-item" onclick="myShowFunction(1)">
+                      <span class="tag tag-default tag-pill float-xs-right">></span>
+                      <a href="#AAP" style="color: black;"><strong>AAP</strong>(Accidentes Anuales por Provincia)    </a>
                     </li>
-                    <li class="list-group-item">
-                      <span class="tag tag-default tag-pill float-xs-right">14</span>
-                      <a href="#" style="color: black;"><strong>GAE</strong>(Gravedad de Accidentes por Edades)</a>
+                    <li class="list-group-item" onclick="myShowFunction(2)">
+                      <span class="tag tag-default tag-pill float-xs-right">></span>
+                      <a href="#GAE" style="color: black;"><strong>GAE</strong>(Gravedad de Accidentes por Edades)</a>
                     </li>
-                    <li class="list-group-item">
-                      <span class="tag tag-default tag-pill float-xs-right">14</span>
-                      <a href="#" style="color: black;"><strong>C+A</strong>(Carreteras con más Accidentes)</a>
+                    <li class="list-group-item" onclick="myShowFunction(3)">
+                      <span class="tag tag-default tag-pill float-xs-right">></span>
+                      <a href="#C+A" style="color: black;"><strong>C+A</strong>(Carreteras con más Accidentes)</a>
                     </li>
-                    <li class="list-group-item">
-                      <span class="tag tag-default tag-pill float-xs-right">14</span>
-                      <a href="#" style="color: black;"><strong>GdA</strong>(Gravedad dependiendo de la Antigüedad)</a>
+                    <li class="list-group-item" onclick="myShowFunction(4)">
+                      <span class="tag tag-default tag-pill float-xs-right">></span>
+                      <a href="#GdA" style="color: black;"><strong>GdA</strong>(Gravedad dependiendo de la Antigüedad)</a>
                     </li>
-                    <li class="list-group-item">
-                      <span class="tag tag-default tag-pill float-xs-right">14</span>
-                      <a href="#" style="color: black;"><strong>AdA</strong>(Accidentes dependiendo del asfalto)</a>
+                    <li class="list-group-item" onclick="myShowFunction(5)">
+                      <span class="tag tag-default tag-pill float-xs-right">></span>
+                      <a href="#AdA" style="color: black;"><strong>AdA</strong>(Accidentes dependiendo del asfalto)</a>
                     </li>
                   </ul>
             </div>
           </div>
 
-          <div class="mastfoot">
-            <div class="inner">
-              <p>Cover template for <a href="https://getbootstrap.com">Bootstrap</a>, by <a href="https://twitter.com/mdo">@mdo</a>.</p>
-            </div>
+
+          <div class="footer">
+            Besitos de caramelo . Pepitas Consulting 2016.
           </div>
 
         </div>
@@ -104,3 +127,50 @@
     <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
   </body>
 </html>
+
+<script>
+function myShowFunction() {
+  switch(arguments[0]){
+    case(arguments[0] = 1):
+       document.getElementById("AAP").style.display = "block";
+       document.getElementById("GAE").style.display = "none";
+       document.getElementById("C+A").style.display = "none";
+       document.getElementById("GdA").style.display = "none";
+       document.getElementById("AdA").style.display = "none";
+      break;
+
+    case(arguments[0] = 2):
+       document.getElementById("AAP").style.display = "none";
+       document.getElementById("GAE").style.display = "block";
+       document.getElementById("C+A").style.display = "none";
+       document.getElementById("GdA").style.display = "none";
+       document.getElementById("AdA").style.display = "none";
+      break;
+
+    case(arguments[0] = 3):
+      document.getElementById("AAP").style.display = "none";
+      document.getElementById("GAE").style.display = "none";
+      document.getElementById("C+A").style.display = "block";
+      document.getElementById("GdA").style.display = "none";
+      document.getElementById("AdA").style.display = "none";
+      break;
+
+    case(arguments[0] = 4):
+      document.getElementById("AAP").style.display = "none";
+      document.getElementById("GAE").style.display = "none";
+      document.getElementById("C+A").style.display = "none";
+      document.getElementById("GdA").style.display = "block";
+      document.getElementById("AdA").style.display = "none";
+      break;
+
+    default:
+      document.getElementById("AAP").style.display = "none";
+      document.getElementById("GAE").style.display = "none";
+      document.getElementById("C+A").style.display = "none";
+      document.getElementById("GdA").style.display = "none";
+      document.getElementById("AdA").style.display = "block";
+      break;
+  }
+}
+
+</script>
