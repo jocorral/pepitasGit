@@ -3,11 +3,11 @@
 <html lang="en">
 <style>
    li{
+     margin-bottom: 2px;
      text-align: left;
-     margin-left: -340px;
-     margin-right: 200px;
      border: 2px solid;
      border-radius: 0px 36.5px;
+
   }
 
 </style>
@@ -37,84 +37,115 @@
 
   <body>
 
-    <div class="site-wrapper">
+    <div class="navbar navbar-default">
+        <img src="http://www.notishop.net/wp-content/uploads/2015/12/nicolas-cage-devuelve-fosil-dinosaurio-notishop-deshoping--830x446.png", height="40", width="50">
+    </div>
 
-      <div class="site-wrapper-inner">
 
-        <div class="cover-container">
+        <div class="container" style="margin-top: 5% ; margin-bottom: 5%">
+            <div id="sidebar" class="col-md-5 col-lg-offset-3">
 
-          <div class="masthead clearfix">
-            <div class="inner">
-                 <h3></h3>
-                 <nav class="nav nav-masthead">
-                     <img src="http://www.notishop.net/wp-content/uploads/2015/12/nicolas-cage-devuelve-fosil-dinosaurio-notishop-deshoping--830x446.png",
-                   height="40", width="50">
-                 </nav>
+                  <h3 style="text-align:right">Graficos</h3>
+
+                    <ul class="list-group">
+                      <li class="list-group-item" onclick="myShowFunction(1)">
+                        <span class="tag tag-default tag-pill float-xs-right">></span>
+                        <a href="#AAP" style="color: black;"><strong>AAP</strong>(Accidentes Anuales por Provincia)    </a>
+                      </li>
+                      <li class="list-group-item" onclick="myShowFunction(2)">
+                        <span class="tag tag-default tag-pill float-xs-right">></span>
+                        <a href="#GAE" style="color: black;"><strong>GAE</strong>(Gravedad de Accidentes por Edades)</a>
+                      </li>
+                      <li class="list-group-item" onclick="myShowFunction(3)">
+                        <span class="tag tag-default tag-pill float-xs-right">></span>
+                        <a href="#C+A" style="color: black;"><strong>C+A</strong>(Carreteras con más Accidentes)</a>
+                      </li>
+                      <li class="list-group-item" onclick="myShowFunction(4)">
+                        <span class="tag tag-default tag-pill float-xs-right">></span>
+                        <a href="#GdA" style="color: black;"><strong>GdA</strong>(Gravedad dependiendo de la Antigüedad)</a>
+                      </li>
+                      <li class="list-group-item" onclick="myShowFunction(5)">
+                        <span class="tag tag-default tag-pill float-xs-right">></span>
+                        <a href="#AdA" style="color: black;"><strong>AdA</strong>(Accidentes dependiendo del asfalto)</a>
+                      </li>
+                    </ul>
+            </div>
+
+
+            <div id="main" class="col-lg-7 col-lg-offset-2">
+              <!-- body en si, tablas y demas -->
+
+              <section class="block" id = "AAP">
+                <h2>Accidentes Anuales por Provincia</h2>
+                <div>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                    ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                    laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                    velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                    sunt in culpa qui officia deserunt mollit anim id est laborum
+                  </p>
+                </div>
+
+              </section>
+              <section class="hidden" id = "GAE">
+              <h2>Gravedad de Accidentes por Edades</h2>
+                <div>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                    ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                    laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                    velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                    sunt in culpa qui officia deserunt mollit anim id est laborum
+                  </p>
+                </div>
+              </section>
+              <section class="hidden" id = "C+A">
+              <h2>Carreteras con más Accidentes</h2>
+                <div>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                    ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                    laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                    velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                    sunt in culpa qui officia deserunt mollit anim id est laborum
+                  </p>
+                </div>
+              </section>
+              <section class="hidden" id = "GdA">
+              <h2>Gravedad dependiendo de la Antigüedad</h2>
+                <div>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                    ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                    laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                    velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                    sunt in culpa qui officia deserunt mollit anim id est laborum
+                  </p>
+                </div>
+              </section>
+              <section class="hidden" id = "AdA">
+              <h2>Accidentes dependiendo del Asfalto</h2>
+                <div>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                    ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                    laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                    velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                    sunt in culpa qui officia deserunt mollit anim id est laborum
+                  </p>
+                </div>
+              </section>
 
             </div>
-          </div>
 
-          <div id = "" class="inner cover">
-            <!-- body en si, tablas y demas -->
+        </div>
 
-            <section class="hidden" id = "AAP">
-              <h1>Accidentes Anuales por Provincia</h1>
-            </section>
-            <section class="hidden" id = "GAE">
-            <h1>Gravedad de Accidentes por Edades</h1>
-            </section>
-            <section class="hidden" id = "C+A">
-            <h1>Carreteras con más Accidentes</h1>
-            </section>
-            <section class="hidden" id = "GdA">
-            <h1>Gravedad dependiendo de la Antigüedad</h1>
-            </section>
-            <section class="hidden" id = "AdA">
-            <h1>Accidentes dependiendo del Asfalto</h1>
-            </section>
-          </div>
-
-          <div id="sidebar" class="col-md-6">
-            <div class="module">
-              <a id="indice"></a>
-
-                <h3 style="text-align: right; margin-right: 300px">Graficos</h3>
-
-                  <ul class="list-group">
-                    <li class="list-group-item" onclick="myShowFunction(1)">
-                      <span class="tag tag-default tag-pill float-xs-right">></span>
-                      <a href="#AAP" style="color: black;"><strong>AAP</strong>(Accidentes Anuales por Provincia)    </a>
-                    </li>
-                    <li class="list-group-item" onclick="myShowFunction(2)">
-                      <span class="tag tag-default tag-pill float-xs-right">></span>
-                      <a href="#GAE" style="color: black;"><strong>GAE</strong>(Gravedad de Accidentes por Edades)</a>
-                    </li>
-                    <li class="list-group-item" onclick="myShowFunction(3)">
-                      <span class="tag tag-default tag-pill float-xs-right">></span>
-                      <a href="#C+A" style="color: black;"><strong>C+A</strong>(Carreteras con más Accidentes)</a>
-                    </li>
-                    <li class="list-group-item" onclick="myShowFunction(4)">
-                      <span class="tag tag-default tag-pill float-xs-right">></span>
-                      <a href="#GdA" style="color: black;"><strong>GdA</strong>(Gravedad dependiendo de la Antigüedad)</a>
-                    </li>
-                    <li class="list-group-item" onclick="myShowFunction(5)">
-                      <span class="tag tag-default tag-pill float-xs-right">></span>
-                      <a href="#AdA" style="color: black;"><strong>AdA</strong>(Accidentes dependiendo del asfalto)</a>
-                    </li>
-                  </ul>
-            </div>
-          </div>
 
 
           <div class="footer">
             Besitos de caramelo . Pepitas Consulting 2016.
           </div>
-
-        </div>
-
-      </div>
-
-    </div>
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
